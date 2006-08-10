@@ -22,17 +22,17 @@ A KDE splash screen featuring a kitty with yellow eyes.
 Ekran startowy KDE z kotem o ¿ó³tych oczach.
 
 %prep
-%setup -q -c -n %{_splash}
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
-install ../README $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
-install  %{_splash}/* $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
+install %{_splash}/* $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README
 %{_datadir}/apps/ksplash/Themes/%{_splash}
