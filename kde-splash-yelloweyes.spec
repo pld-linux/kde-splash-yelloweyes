@@ -1,7 +1,7 @@
 %define		_splash		yelloweyes
 
 Summary:	KDE splash screen
-Summary(pl.UTF-8):   Ekran startowy KDE
+Summary(pl.UTF-8):	Ekran startowy KDE
 Name:		kde-splash-%{_splash}
 Version:	2.0
 Release:	1
