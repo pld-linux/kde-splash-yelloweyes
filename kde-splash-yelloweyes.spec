@@ -1,7 +1,7 @@
 %define		_splash		yelloweyes
 
 Summary:	KDE splash screen
-Summary(pl):	Ekran startowy KDE
+Summary(pl.UTF-8):   Ekran startowy KDE
 Name:		kde-splash-%{_splash}
 Version:	2.0
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A KDE splash screen featuring a kitty with yellow eyes.
 
-%description -l pl
-Ekran startowy KDE z kotem o ¿ó³tych oczach.
+%description -l pl.UTF-8
+Ekran startowy KDE z kotem o Å¼Ã³Å‚tych oczach.
 
 %prep
 %setup -q -c
